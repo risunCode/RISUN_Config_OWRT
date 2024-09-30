@@ -1,0 +1,29 @@
+payload:
+# Kurogames
+- DST-PORT,10301
+- DST-PORT,9090
+- DST-PORT,10012
+
+# KuroGames - Wuthering Waves
+- DOMAIN-SUFFIX,kurogame-service.com
+- DOMAIN-SUFFIX,sdk-prod-cdn-aws.kurogame-service.com
+- DOMAIN-SUFFIX,us-datareceiver.aki-game.net
+- DOMAIN-SUFFIX,us-datareceiver.aki-game.net
+- DOMAIN-SUFFIX,pus-datareceiver.aki-game.net
+- DOMAIN-SUFFIX,prod-volcdn-gamestarter.kurogame.net
+- DOMAIN-SUFFIX,qcloud-sg-datareceiver.kurogame.xyz
+- DOMAIN-SUFFIX,sdk-prod-cdn-aws.kurogame-service.com
+- DOMAIN-SUFFIX,sdkapi.kurogame-service.com
+- DOMAIN-SUFFIX,svr.d.carystudio.com
+- DOMAIN-SUFFIX,events.gfe.nvidia.com
+- DOMAIN-SUFFIX,aki-game.net
+- DOMAIN-SUFFIX,game.net
+- DOMAIN-SUFFIX,kurogame.xyz
+- DOMAIN-SUFFIX,carystudio.com
+- DOMAIN-SUFFIX,kurogame.net
+- DOMAIN-SUFFIX,appsflyer.com
+- DOMAIN-SUFFIX,kurogame.com
+- DOMAIN-SUFFIX,shelljacket.us
+- DOMAIN-SUFFIX,listdl.com
+
+# Risunturu

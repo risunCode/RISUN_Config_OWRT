@@ -1,0 +1,7 @@
+payload:
+  # Whatsapp
+  - DST-PORT,3478
+  - DST-PORT,4244
+  - DST-PORT,53
+  - DST-PORT,40020
+  - DST-PORT,57923

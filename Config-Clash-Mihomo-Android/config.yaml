@@ -1,0 +1,378 @@
+# ======= RISUNTURU VPN SELECTOR  =======
+proxy-providers:
+  AD-INDONESIA:
+    type: file
+    path: "./proxy_provider/ACC_Android_ID.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: '120'
+  AD-SINGAPURA:
+    type: file
+    path: "./proxy_provider/ACC_Android_SG.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: '120'
+port: 7890
+redir-port: 9797
+socks-port: 7893
+proxy-port: 9898
+mixed-port: 7893
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: ""
+bind-address: "*"
+unified-delay: true
+external-ui: ./dashboard
+tcp-concurrent: true  
+ipv6: false
+# =========== ANOTHER CLASH SETTINGS ===========
+sniffer:
+  enable: true
+  sniff:
+    http: { ports: [1-442, 444-8442, 8444-65535], override-destination: true }
+    tls: { ports: [1-79, 81-8079, 8081-65535], override-destination: true }
+  force-domain:
+      - +.v2ex.com
+      - www.google.com
+      - google.com
+  skip-domain:
+      - Mijia Cloud
+      - dlg.io.mi.com
+  sniffing:
+    - tls
+    - http
+  port-whitelist:
+    - 80
+    - 443
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  listen: 0.0.0.0:7874
+  fake-ip-filter:
+  - "+.*"
+  nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+  fallback:
+    - https://dns.google/dns-query#UMUM
+  default-nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+  fallback-filter:
+    geoip: true
+    geoip-code: ID
+    ipcidr:
+    - 0.0.0.0/8
+    - 10.0.0.0/8
+    - 100.64.0.0/10
+    - 127.0.0.0/8
+    - 169.254.0.0/16
+    - 172.16.0.0/12
+    - 192.0.0.0/24
+    - 192.0.2.0/24
+    - 192.88.99.0/24
+    - 192.168.0.0/16
+    - 198.18.0.0/15
+    - 198.51.100.0/24
+    - 203.0.113.0/24
+    - 224.0.0.0/4
+    - 240.0.0.0/4
+    - 255.255.255.255/32
+    domain:
+    - "+.google.com"
+    - "+.facebook.com"
+    - "+.youtube.com"
+    - "+.githubusercontent.com"
+    - "+.googlevideo.com"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - msftconnecttest.com
+    - msftncsi.com
+    - "+.*"
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+# =========== AccountSelector  ===========
+proxy-groups: 
+- name: 🔰Akun-INDO🔰
+  type: select
+  disable-udp: false
+  use:
+  - AD-INDONESIA
+  url: http://www.gstatic.com/generate_204
+  interval: '120'
+
+- name: 🔰Akun-SINGAPURA🔰
+  type: select
+  disable-udp: false
+  use:
+  - AD-SINGAPURA
+  url: http://www.gstatic.com/generate_204
+  interval: '120'
+  
+
+# =========== MAIN-ProxyGroup  ===========
+- name: UMUM
+  type: select
+  disable-udp: false
+  proxies:
+  - FALLBACK
+  - DIRECT
+  - 🔰Akun-INDO🔰
+  - 🔰Akun-SINGAPURA🔰
+  url: http://www.gstatic.com/generate_204
+  interval: '180'
+
+- name: 🗿Block Bokepp💢
+  type: select
+  disable-udp: false
+  proxies:
+  - REJECT
+  - DIRECT
+  - 🔰Akun-INDO🔰
+  - 🔰Akun-SINGAPURA🔰
+  url: http://www.gstatic.com/generate_204
+  interval: '180'
+
+- name: ⚡SpeedTest🚀
+  type: select
+  disable-udp: false
+  proxies:
+  - FALLBACK
+  - DIRECT
+  - BALANCE
+  - 🔰Akun-INDO🔰
+  - 🔰Akun-SINGAPURA🔰
+  url: http://www.gstatic.com/generate_204
+  interval: '180'
+
+- name: 🕹MobileLegends🎮
+  type: select
+  disable-udp: false
+  proxies:
+  - FALLBACK
+  - DIRECT
+  - BALANCE
+  - 🔰Akun-INDO🔰
+  - 🔰Akun-SINGAPURA🔰
+  url: http://www.gstatic.com/generate_204
+  interval: '180'
+
+- name: 🕹FreeFire🎮
+  type: select
+  disable-udp: false
+  proxies:
+  - FALLBACK
+  - DIRECT
+  - BALANCE
+  - 🔰Akun-INDO🔰
+  - 🔰Akun-SINGAPURA🔰
+  url: http://www.gstatic.com/generate_204
+  interval: '180'
+
+- name: 🕹OnlineGamesPlus🎮
+  type: select
+  disable-udp: false
+  proxies:
+  - FALLBACK
+  - DIRECT
+  - BALANCE
+  - 🔰Akun-INDO🔰
+  - 🔰Akun-SINGAPURA🔰
+  url: http://www.gstatic.com/generate_204
+  interval: '180'
+
+- name: 🕹SocialMediaNet🔱
+  type: select
+  disable-udp: false
+  proxies:
+  - FALLBACK
+  - DIRECT
+  - BALANCE
+  - 🔰Akun-INDO🔰
+  - 🔰Akun-SINGAPURA🔰
+  url: http://www.gstatic.com/generate_204
+  interval: '180'
+
+- name: 🕹StreamingALL📻
+  type: select
+  disable-udp: false
+  proxies:
+  - FALLBACK
+  - DIRECT
+  - BALANCE
+  - 🔰Akun-INDO🔰
+  - 🔰Akun-SINGAPURA🔰
+  url: http://www.gstatic.com/generate_204
+  interval: '180'
+
+- name: 🕹Market-Bank-ETC💰
+  type: select
+  disable-udp: false
+  proxies:
+  - FALLBACK
+  - DIRECT
+  - BALANCE
+  - 🔰Akun-INDO🔰
+  - 🔰Akun-SINGAPURA🔰
+  url: http://www.gstatic.com/generate_204
+  interval: '180'
+
+- name: 🕹WhatsApp💮
+  type: select
+  disable-udp: false
+  proxies:
+  - FALLBACK
+  - DIRECT
+  - BALANCE
+  - 🔰Akun-INDO🔰
+  - 🔰Akun-SINGAPURA🔰
+  url: http://www.gstatic.com/generate_204
+  interval: '180'
+
+# =========== Balancing  ===========
+- name: BALANCE
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - AD-INDONESIA
+  - AD-SINGAPURA
+  url: http://www.gstatic.com/generate_204
+  interval: '120'
+
+- name: FALLBACK
+  type: fallback
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - AD-INDONESIA
+  - AD-SINGAPURA
+  url: http://www.gstatic.com/generate_204
+  interval: '120'
+
+- name: BEST-PING
+  type: url-test
+  use:
+  - AD-INDONESIA
+  - AD-SINGAPURA
+  url: http://www.gstatic.com/generate_204
+  interval: '120'
+
+# =======  Rule_Provider =======
+# RISUNTURU
+rule-providers:
+  DIRECT:
+    type: file
+    behavior: classical
+    path: "./rule_provider/DIRECT.yaml"
+  RT-Adblock:
+    type: file
+    behavior: classical
+    path: "./rule_provider/RT-Adblock.yaml"
+  RT-BokepBiasa:
+    type: file
+    behavior: classical
+    path: "./rule_provider/RT-BokepBiasa.yaml"
+  RT-Conference:
+    type: file
+    behavior: classical
+    path: "./rule_provider/RT-Conference.yaml"
+  RT-Discord:
+    type: file
+    behavior: classical
+    path: "./rule_provider/RT-Discord.yaml"
+  RT-SpeedTest:
+    type: file
+    behavior: classical
+    path: "./rule_provider/RT-SpeedTest.yaml"
+  RT-SocialMedia:
+    type: file
+    behavior: classical
+    path: "./rule_provider/RT-SocialMedia.yaml"
+  RT-NetFlix:
+    type: file
+    behavior: classical
+    path: "./rule_provider/RT-NetFlix.yaml"
+  RT-DisneyHotPlus:
+    type: file
+    behavior: classical
+    path: "./rule_provider/RT-DisneyHotPlus.yaml"
+  RT-Streaming:
+    type: file
+    behavior: classical
+    path: "./rule_provider/RT-Discord.yaml"
+  RT-MarketBankETC:
+    type: file
+    behavior: classical
+    path: "./rule_provider/RT-MarketBankETC.yaml"
+#> Game Addon
+  RTG-CODM:
+    type: file
+    behavior: classical
+    path: "./rule_provider/RTG-CODM.yaml"
+  RTG-FreeFire:
+    type: file
+    behavior: classical
+    path: "./rule_provider/RTG-FreeFire.yaml"
+  RTG-MLBB:
+    type: file
+    behavior: classical
+    path: "./rule_provider/RTG-MLBB.yaml"
+  RTG-WutheringWaves:
+    type: file
+    behavior: classical
+    path: "./rule_provider/RTG-WutheringWaves.yaml"
+  RTG-Genshin:
+    type: file
+    behavior: classical
+    path: "./rule_provider/RTG-Genshin.yaml"
+  RTG-OnlineGame:
+    type: file
+    behavior: classical
+    path: "./rule_provider/RTG-ALLmixGAME.yaml"
+#> Daily other
+  RT-GoogleFamily:
+    type: file
+    behavior: classical
+    path: "./rule_provider/RT-GoogleFamily.yaml"
+  RT-WhatsApp:
+    type: file
+    behavior: classical
+    path: "./rule_provider/RT-WhatsApp.yaml"
+    
+# =======  RuleSet-PisahTrafik =======
+# RISUNTURU
+rules:
+- DST-PORT,7895,REJECT
+- DST-PORT,7892,REJECT
+- IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+- RULE-SET,RT-Adblock,REJECT,no-resolve
+- RULE-SET,RT-BokepBiasa,🗿Block Bokepp💢
+- RULE-SET,RT-SpeedTest,⚡SpeedTest🚀
+- RULE-SET,RT-SocialMedia,🕹SocialMediaNet🔱
+- RULE-SET,RT-MarketBaADETC,🕹Market-Bank-ETC💰
+#> Addon Streaming
+- RULE-SET,RT-NetFlix,🕹StreamingALL📻
+- RULE-SET,RT-DisneyHotPlus,🕹StreamingALL📻
+- RULE-SET,RT-Streaming,🕹StreamingALL📻
+#> Game Addon
+- RULE-SET,RTG-CODM,🕹OnlineGamesPlus🎮
+- RULE-SET,RTG-WutheringWaves,🕹OnlineGamesPlus🎮
+- RULE-SET,RTG-Genshin,🕹OnlineGamesPlus🎮
+#> Game Utama
+- RULE-SET,RTG-MLBB,🕹MobileLegends🎮
+- RULE-SET,RTG-FreeFire,🕹FreeFire🎮
+- RULE-SET,RTG-OnlineGame,🕹OnlineGamesPlus🎮
+#> Daily
+- RULE-SET,RT-WhatsApp,🕹WhatsApp💮
+- RULE-SET,RT-GoogleFamily,UMUM
+- RULE-SET,RT-Conference,UMUM
+- RULE-SET,RT-Discord,UMUM
+- MATCH,UMUM

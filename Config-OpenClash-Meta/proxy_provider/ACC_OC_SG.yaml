@@ -1,0 +1,16 @@
+proxies:
+  - name: GCP ID
+    server: 17xxxxxxxx
+    port: 80
+    type: vless
+    uuid: 728e6c5e-7db8-xxxxxxxxxx
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: gcp-
+    network: ws
+    ws-opts:
+      path: xxxx
+      headers:
+        Host: g
+    udp: true

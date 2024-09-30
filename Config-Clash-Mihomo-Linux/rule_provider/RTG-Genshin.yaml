@@ -1,0 +1,20 @@
+# Behavior: classical
+# last edited by risunturu
+
+payload:
+# > Genshin Impact Domain
+- DOMAIN-SUFFIX,genshinimpact.com
+- DOMAIN-SUFFIX,honkaiimpact3.com
+- DOMAIN-SUFFIX,honkaistarrail.com
+- DOMAIN-SUFFIX,hoyo.link
+- DOMAIN-SUFFIX,hoyolab.com
+- DOMAIN-SUFFIX,hoyoverse.com
+- DOMAIN-SUFFIX,n0vadesktop.com
+- DOMAIN-SUFFIX,mihoyo.com
+- DOMAIN-KEYWORD,genshinimpact
+- DOMAIN-KEYWORD,honkaiimpact3
+- DOMAIN-KEYWORD,mihoyo
+
+#Genshin Impact Port range
+- DST-PORT,42472
+- DST-PORT,42472/22101-22102
