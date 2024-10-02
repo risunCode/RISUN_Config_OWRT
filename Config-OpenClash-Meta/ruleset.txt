@@ -1,0 +1,7 @@
+rules:
+#> Whitelist IP bug kalian disini dengan akhiran /32 (ip tunggal)
+# berikan hastag didepan untuk mematikan yang tidak perlu.
+#- IP-CIDR,172.67.73.39/32,DIRECT,no-resolve #(biz)
+#- DOMAIN-SUFFIX,skillacademy.com,DIRECT,no-resolve # ilmupedia
+#- DOMAIN-SUFFIX,nontontv.vidio.com,DIRECT,no-resolve #(vidio)
+# Disabled > yakali kamu mau edit konfig terus wkwk

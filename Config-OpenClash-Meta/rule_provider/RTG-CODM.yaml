@@ -1,0 +1,21 @@
+payload:
+#CODM
+- DST-PORT,3013/10000-10019/18082/50000/65010/65050
+- DST-PORT,7085-7995/8700/9030/10010-10019/17000-20100
+
+#> Domain
+- DOMAIN-SUFFIX,codmtw-cdn-garenanow-com.obs.ap-southeast-3.myhuaweicloud.com
+- DOMAIN-SUFFIX,vasdgame.com
+- DOMAIN-SUFFIX,atm-broker-tcp-prod-cmw-sg.vasdgame.com
+- DOMAIN-SUFFIX,garena.com
+- DOMAIN-SUFFIX,lobbysg1.codm.garena.com
+- DOMAIN-SUFFIX,garenanow.com
+- DOMAIN-SUFFIX,dl.codm.cdn.garenanow.com
+- DOMAIN-SUFFIX,dlmobilegarena-a.akamaihd.net
+- DOMAIN-SUFFIX,anticheatexpert.com
+- DOMAIN-SUFFIX,a.akamaihd.net
+- DOMAIN-SUFFIX,myqcloud.com
+- DOMAIN-SUFFIX,47.241.218.212
+
+
+# Risunturu

@@ -1,0 +1,152 @@
+# Config ini diedit oleh @risunturu (tele,discord)
+# Base Template : RisunTuru 16 September 2024
+# ANTI DNS BOCOR !!! https://browserleaks.com/dns 
+# Repo : https://github.com/risunCode/OpenClash-Config-Meta
+# Last Refined, 19 September 2024 by risunturu | # t.me/risunturu
+# Made For OpenClash |  REDIR HOST MODE (LEBIH RESPONSIF)
+
+# ======= VPN SELECTOR  =======
+proxy-providers:
+  RT-INDONESIA:
+    type: file
+    path: "./proxy_provider/ACC_OC_ID.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+# ======= CLASH SETTINGS =======
+redir-port: 7892
+tproxy-port: 7895
+port: 7890
+socks-port: 7891
+mixed-port: 7893
+mode: rule
+log-level: silent
+allow-lan: true
+unified-delay: true
+external-controller: 0.0.0.0:9090
+secret: risunturu
+bind-address: "*"
+external-ui: "/usr/share/openclash/ui"
+ipv6: false
+tcp-concurrent: true
+sniffer:
+  enable: true
+  parse-pure-ip: true
+geodata-loader: memconservative
+keep-alive-interval: 1800
+# INITALIZE TUN DEVICE #
+tun:
+  enable: true
+  stack: system
+  device: utun
+  auto-route: false
+  auto-detect-interface: false
+  dns-hijack:
+  - tcp://any:53
+# JANGAN MASUKIN DNS PROVIDER KALO GAMAU BOCOR #
+dns:
+  nameserver:
+  - tls://1dot1dot1dot1.cloudflare-dns.com
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  listen: 0.0.0.0:7874
+  fake-ip-filter:
+  - "+.*"
+  default-nameserver:
+  - 8.8.8.8
+  - 1.1.1.1
+  fake-ip-range: 198.18.0.1/16
+  fallback:
+  # > dont change
+  - tls://1dot1dot1dot1.cloudflare-dns.com#UMUM
+  fallback-filter:
+    geoip: true
+    geoip-code: ID
+    ipcidr:
+    - 0.0.0.0/8
+    - 10.0.0.0/8
+    - 100.64.0.0/10
+    - 127.0.0.0/8
+    - 169.254.0.0/16
+    - 172.16.0.0/12
+    - 192.0.0.0/24
+    - 192.0.2.0/24
+    - 192.88.99.0/24
+    - 192.168.0.0/16
+    - 198.18.0.0/15
+    - 198.51.100.0/24
+    - 203.0.113.0/24
+    - 224.0.0.0/4
+    - 232.0.0.0/4
+    - 255.255.255.255/32
+    domain:
+    - "+.google.com"
+    - "+.facebook.com"
+    - "+.youtube.com"
+    - "+.githubusercontent.com"
+    - "+.googlevideo.com"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - msftconnecttest.com
+    - msftncsi.com
+    - "+.*"
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+# ======= AccountSelector  =======
+proxy-groups:
+- name: 🔰Akun-INDO🔰
+  type: select
+  disable-udp: false
+  use:
+  - RT-INDONESIA
+  url: http://www.gstatic.com/generate_204
+  interval: 180
+
+# =========== MAIN-ProxyGroupr ===========
+- name: UMUM
+  type: select
+  disable-udp: false
+  proxies:
+  - 🔰Akun-INDO🔰
+  - DIRECT
+  url: http://www.gstatic.com/generate_204
+  interval: 180
+
+- name: ⚡SpeedTest🚀
+  type: select
+  disable-udp: false
+  proxies:
+  - 🔰Akun-INDO🔰
+  - DIRECT
+  url: http://www.gstatic.com/generate_204
+  interval: 180
+
+# =======  Rule_Provider =======
+# RISUNTURU
+rule-providers:
+  DIRECT:
+    type: file
+    behavior: classical
+    path: "./rule_provider/DIRECT.yaml"
+  RT-Adblock:
+    type: file
+    behavior: classical
+    path: "./rule_provider/RT-Adblock.yaml"
+  RT-SpeedTest:
+    type: file
+    behavior: classical
+    path: "./rule_provider/RT-SpeedTest.yaml"
+    
+# =======  RuleSet-PisahTrafik =======
+# RISUNTURU
+rules:
+- DST-PORT,7895,REJECT
+- DST-PORT,7892,REJECT
+- IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+- RULE-SET,RT-Adblock,REJECT,no-resolve
+- RULE-SET,RT-SpeedTest,⚡SpeedTest🚀
+- MATCH,UMUM

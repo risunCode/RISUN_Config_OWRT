@@ -1,0 +1,133 @@
+payload:
+# last edited by risunturu
+# keterangan : atas untuk port TCP dan bawah UDP
+
+#> PUBG/M
+- DST-PORT,7889/10012/13004/14000/17000/17500/18081/20000-20002/20371
+- DST-PORT,8011/9030/10491/10612/12235/13004/13748/17000/17500/20000-20002/7086-7995/10039/10096/11455/12070-12460/13894/13972/41182-41192
+
+#> PointBlank
+- DST-PORT,39190-39200
+- DST-PORT,40000-40010
+
+# > Ubisoft
+- DOMAIN-SUFFIX,ubi.com
+- DOMAIN-SUFFIX,ubisoft.com
+- DOMAIN-SUFFIX,ubisoft.org
+- DOMAIN-SUFFIX,ubisoftconnect.com
+
+#> STEAM Client 
+- DOMAIN-SUFFIX,s.team
+- DOMAIN-SUFFIX,steam-chat.com
+- DOMAIN-SUFFIX,steamchina.com
+- DOMAIN-SUFFIX,steamcommunity.com
+- DOMAIN-SUFFIX,steamcontent.com
+- DOMAIN-SUFFIX,steamgames.com
+- DOMAIN-SUFFIX,steampipe.akamaized.net
+- DOMAIN-SUFFIX,steampowered.com
+- DOMAIN-SUFFIX,steampowered.com.8686c.com
+- DOMAIN-SUFFIX,steamstatic.com
+- DOMAIN-SUFFIX,steamstatic.com.8686c.com
+- DOMAIN-SUFFIX,steamusercontent.com
+- DOMAIN-SUFFIX,valve.net
+- DOMAIN-SUFFIX,valvesoftware.com
+- DST-PORT,27000-27015 #inclusive (Game client traffic)
+- DST-PORT,27015-27030 #inclusive (Typically Matchmaking and HLTV)
+- DST-PORT,27014-27050 #inclusive (Steam downloads)
+- DST-PORT,4380
+
+#> Dedicated or Listen Servers
+- DST-PORT,27015 #(SRCDS Rcon port)
+#Steamworks P2P Networking and Steam Voice Chat
+- DST-PORT,3478 #(Outbound)
+- DST-PORT,4379 #(Outbound)
+- DST-PORT,4380 #(Outbound)
+
+# > Epic Games
+- DOMAIN-SUFFIX,epicgames.com
+- DOMAIN-SUFFIX,epicgames.dev
+- DOMAIN-SUFFIX,epicgames.net
+- DOMAIN-SUFFIX,unrealengine.com
+
+# > Minecraft
+- DOMAIN-SUFFIX,minecraft-services.net
+- DOMAIN-SUFFIX,minecraft.net
+- DOMAIN-SUFFIX,minecraftprod.rtep.msgamestudios.com
+- DOMAIN-SUFFIX,minecraftservices.com
+- DOMAIN-SUFFIX,mojang.com
+
+# > Riot Games
+- DOMAIN-SUFFIX,leagueoflegends.com
+- DOMAIN-SUFFIX,lolstatic.com
+- DOMAIN-SUFFIX,rgpub.io
+- DOMAIN-SUFFIX,riotcdn.com
+- DOMAIN-SUFFIX,riotcdn.net
+- DOMAIN-SUFFIX,riotgames.com
+
+#> Origin APEX Legends
+- DST-PORT,1024-1124
+- DST-PORT,9960-9969
+- DST-PORT,3216
+- DST-PORT,18120
+- DST-PORT,18060
+- DST-PORT,27900
+- DST-PORT,28910
+- DST-PORT,29900 
+- DST-PORT,18000
+- DST-PORT,37000-40000
+
+#> World of Tanks games
+- DST-PORT,5060
+- DST-PORT,5062
+- DST-PORT,3478
+- DST-PORT,3479
+- DST-PORT,20014
+- DST-PORT,3128
+- DST-PORT,8081
+- DST-PORT,8088
+- DST-PORT,32801
+- DST-PORT,32803
+- DST-PORT,12000-29999
+- DST-PORT,32801-32825
+- DST-PORT,20000-25000
+
+# COC sama Clash Royal
+- DST-PORT,9330-9340
+- DST-PORT,9330-9340
+
+#> Roblox
+- DST-PORT,49152-65535
+
+#Arena Of Valor game alien wkwk
+- DST-PORT,10001-10094 # TCP
+- DST-PORT,10101-10201/10080-10110/17000-18000 #UDP
+
+#League of Legends (LOL) Mobile 
+- DST-PORT,2080-2099
+- DST-PORT,5100
+
+#Stumble Guys
+- DST-PORT,5055-5058
+
+#FIFA ONLINE
+- DST-PORT,7770-7790
+- DST-PORT,16300-16350
+
+#> Growtopia gim kotak kotak
+- DST-PORT,16999
+- DOMAIN-SUFFIX,growtopia1.com
+- DOMAIN-SUFFIX,growtopia2.com
+- DOMAIN-SUFFIX,growtopiagame.com
+- DOMAIN-KEYWORD,growtopia
+
+# apex|ff|mlbbb
+- DST-PORT,8888
+
+#Seven Knight
+- DST-PORT,12000-12010
+
+#> Domino Family
+- DST-PORT,9122/11000-11150 #DOMINO QQ
+- DST-PORT,50001-50500 #DOMINO QQ 2
+- DST-PORT,5353/40000-40010 #DOMINO QQ 2
+- DST-PORT,7020-7030 #BOOYA DOMINO QIUQIU

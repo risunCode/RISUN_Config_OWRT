@@ -1,0 +1,51 @@
+payload:
+#> Port Game
+- DST-PORT,5061
+- DST-PORT,5055
+- DST-PORT,5056
+- DST-PORT,4535
+
+#> Domain
+- DOMAIN-SUFFIX,albion1.battleye.com
+- DOMAIN-SUFFIX,az764295.vo.msecnd.net
+
+#> Root *
+- DOMAIN-SUFFIX,albion.zone
+- DOMAIN-KEYWORD,albion.zone
+- DOMAIN-SUFFIX,albiononline.com
+- DOMAIN-KEYWORD,albiononline.com
+
+# Ping Checker Albion
+- DOMAIN-SUFFIX,serverstatus-ams.albiononline.com
+- DOMAIN-SUFFIX,serverstatus-sgp.albiononline.com
+- DOMAIN-SUFFIX,live.albiononline.com
+- DOMAIN-SUFFIX,assets.albiononline.com
+- DOMAIN-SUFFIX,serverstatus.albiononline.com
+- DOMAIN-SUFFIX,live01-status.sg.albion.zone
+- DOMAIN-SUFFIX,live02-status.sg.albion.zone
+- DOMAIN-SUFFIX,live03-status.sg.albion.zone
+- DOMAIN-SUFFIX,live01-status.ams.albion.zone
+- DOMAIN-SUFFIX,live02-status.ams.albion.zone
+- DOMAIN-SUFFIX,live03-status.ams.albion.zone
+- DOMAIN-SUFFIX,live01-status.dc02.albion.zone
+- DOMAIN-SUFFIX,live01-status.dc02.albion.zone
+
+#> server download albion
+- DOMAIN-KEYWORD,sg1-hw-edge-gc22
+- DOMAIN-SUFFIX,sg1-hw-edge-gc22
+- DOMAIN-SUFFIX,live02-win-45.sg.albion.zone
+- DOMAIN-KEYWORD,live02-win-45.sg.albion.zone
+
+- DOMAIN-SUFFIX,iam.gcdn.co
+- DOMAIN-SUFFIX,gcdn.co
+- DOMAIN-SUFFIX,msecnd.net
+- DOMAIN-SUFFIX,geforce.com
+- DOMAIN-SUFFIX,battleye.com
+
+#> CIDR atau Rentang IP
+- IP-CIDR,161.117.250.0/23
+- IP-CIDR,92.223.116.0/24
+- IP-CIDR,54.230.52.0/22
+- IP-CIDR,208.43.64.0/18
+
+# Risunturu

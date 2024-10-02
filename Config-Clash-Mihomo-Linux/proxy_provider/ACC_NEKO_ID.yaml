@@ -1,0 +1,20 @@
+# Single akun
+# untuk config :  Advanced.yaml
+# reformat di : sub.bonds.id
+# =========== PROXY ACCOUNT ===========
+proxies:  
+  - name: Digitalocean, LLC (SG5)
+    server: :x
+    port: 80
+    type: vless
+    uuid: bc6b5c35-cxxx
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: vless-raixxxx
+    network: ws
+    ws-opts:
+      path: /sg5
+      headers:
+        Host: vless-xxxx
+    udp: true

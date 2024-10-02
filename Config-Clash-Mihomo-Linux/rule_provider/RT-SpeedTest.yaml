@@ -1,0 +1,40 @@
+#speedtest list websites
+# Behavior: classical
+# last edited by risunturu
+# Tun(tcp)- ndt-mlab2-sin01.mlab-oti.measurement-lab.org
+ 
+payload:  
+- DOMAIN-SUFFIX,nperf.net
+- DOMAIN-SUFFIX,nperf.com
+- IP-CIDR,34.101.195.0/24 # google
+- DOMAIN-SUFFIX,uwn.com  
+- DOMAIN-KEYWORD,wifiman  
+- DOMAIN-SUFFIX,speed.measurementlab.net
+- DOMAIN-SUFFIX,measurementlab.net
+- DOMAIN-SUFFIX,measurement-lab.org
+- DOMAIN-SUFFIX,fiber.google.com
+- DOMAIN-SUFFIX,fast.com
+- DOMAIN-SUFFIX,include:ookla-speedtest-ads
+- DOMAIN-SUFFIX,sb.scorecardresearch.com
+- DOMAIN-SUFFIX,m1speedtest1.m1net.com  
+- DOMAIN-SUFFIX,speedsin.phoenixnap.com 
+
+- DOMAIN-SUFFIX,cdnst.net
+- DOMAIN-SUFFIX,cellmaps.com
+- DOMAIN-SUFFIX,ekahau.cloud
+- DOMAIN-SUFFIX,ekahau.com
+- DOMAIN-SUFFIX,ookla.com
+- DOMAIN-SUFFIX,ooklaserver.net
+- DOMAIN-SUFFIX,pingtest.net
+- DOMAIN-SUFFIX,speedtest.co
+- DOMAIN-SUFFIX,speedtest.net
+- DOMAIN-SUFFIX,speedtestcustom.com
+- DOMAIN-SUFFIX,webtest.net
+- DOMAIN-SUFFIX,speed.cloudflare.com
+- DOMAIN-SUFFIX,speed.dler.io
+- DOMAIN-SUFFIX,openspeedtest.com
+- DOMAIN-SUFFIX,cachefly.net
+- DOMAIN-KEYWORD,speedtest
+- DOMAIN-KEYWORD,speedtestcustom
+- DOMAIN-KEYWORD,openspeedtest
+- DST-PORT,8080
