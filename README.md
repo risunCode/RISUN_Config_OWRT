@@ -7,7 +7,7 @@
 > - Download Pakai Chrome (intinya browser)
 > - klik link dibawah untuk konfig
 ### Masing2 Confignya beda2 jangan ditukar tukar.
-- PassWall OpenWRT=== [KLIK Untuk Download](https://github.com/risunCode/RISUN_Config_OWRT/releases/download/September-update-24/passwall)
+- PassWall OpenWRT=== Maintenance 
 - STB OPENCLASH OPENWRT==== [KLIK DISINI](https://github.com/risunCode/RISUN_Config_OWRT/releases/download/September-update-24/OpenClash-Risun.tar.gz)
 - STB NEKOCLASH OPENWRT=== [KLIK DISINI](https://github.com/risunCode/RISUN_Config_OWRT/releases/download/September-update-24/NekoClash-Risun.zip)
 - ANDROID BFR,CFM,BFM=== [ KLIK DISINI](https://github.com/risunCode/RISUN_Config_OWRT/releases/download/September-update-24/BFM-CFM-CLASH-ANDROID-Risun.zip)
