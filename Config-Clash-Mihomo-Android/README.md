@@ -3,6 +3,7 @@
 > https://t.me/hiddentokio
 
 # Config Clash untuk Android
+- [Download Disini](https://github.com/risunCode/RISUN_Config_OWRT/releases/download/oktober-update-24/BFM-CFM-CLASH-ANDROID-Risun.zip)
 > BFR atau CFM (Clash lah intinya)
 
 ## proxy provider
