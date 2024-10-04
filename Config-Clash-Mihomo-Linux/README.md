@@ -8,7 +8,7 @@
 ## Rule Block Iklan Sangat Gacorr
 - web dengan iklan ganggu : https://bravedown.com/
 - adblock tester : https://d3ward.github.io/toolz/adblock
-- 
+
 ## Cara Menambah/Edit config nekoclash  
 - Edit atau Tambah Config NekoClash
 - Buka File manager : ke System -> File manager
