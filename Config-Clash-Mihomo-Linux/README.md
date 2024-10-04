@@ -3,6 +3,7 @@
 > https://t.me/hiddentokio
 
 # NekoClash Config by RisunTuru
+- [Download disini](https://github.com/risunCode/RISUN_Config_OWRT/releases/download/oktober-update-24/NekoClash-Risun.zip)
 
 ## Rule Block Iklan Sangat Gacorr
 - web dengan iklan ganggu : https://bravedown.com/
@@ -19,4 +20,4 @@
 ## End of this blog.
 > [!NOTE]
 > - Terakhir diubah oleh : RisunTuru
-> - pada : 30 September 2024
+> - pada : 4 Oktober 2024
