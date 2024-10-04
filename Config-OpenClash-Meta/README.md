@@ -1,7 +1,7 @@
 > [!IMPORTANT]
 > Brought to you by: RisunTuru
-> https://t.me/hiddentokio
-> https://t.me/risuntrash
+> - https://t.me/hiddentokio
+> - https://t.me/risuntrash
 
 # Download OpenClash backup
 - Download [DISINI](https://github.com/risunCode/RISUN_Config_OWRT/releases/download/oktober-update-24/oct-Risun-OpenClash.tar.tar.gz)
