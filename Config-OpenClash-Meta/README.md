@@ -24,6 +24,7 @@
 
 # Troubleshoot, ping tersedia namun internet tidak jalan.
 - Kasus Ini hanya terjadi pada beberapa firmware/versi openclash (*koreksi jika salah)
+- Dengan mematikan dns custom, maka clash akan menyesuaikan pengaturan dns dari config.
 - Intinnya masuk ke **overwrite settings** di openclash
 - Arahkan ke **DNS Settings**
 - Matikan **Custom DNS Setting**
