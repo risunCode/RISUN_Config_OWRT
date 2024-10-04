@@ -1,6 +1,7 @@
 > [!IMPORTANT]
 > Brought to you by: RisunTuru
-> https://t.me/hiddentokio
+> - https://t.me/hiddentokio
+> - https://t.me/risuntrash
 
 # NekoClash Config by RisunTuru
 - [Download disini](https://github.com/risunCode/RISUN_Config_OWRT/releases/download/oktober-update-24/NekoClash-Risun.zip)
