@@ -5,7 +5,6 @@
 
 ### Cek Repositori untuk download & cara penggunaan (Klik untuk detail)
 > [!NOTE]
-> - Written by Risunturu.
 > - klik link dibawah untuk cek repositori
 > - Download Pakai Chrome/browser lain, agar extension file tidak berubah.
 - PassWall OpenWRT=== [KLIK DISINI](https://github.com/risunCode/RISUN_Config_OWRT/tree/main/Config-PassWall)
