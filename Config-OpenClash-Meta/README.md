@@ -23,7 +23,7 @@
 - Pencet -> Upload untuk restore config
 
 # Troubleshoot, ping tersedia namun internet tidak jalan.
-- Kasus Ini hanya terjadi pada beberapa firmware
+- Kasus Ini hanya terjadi pada beberapa firmware/versi openclash (*koreksi jika salah)
 - Intinnya masuk ke **overwrite settings** di openclash
 - Arahkan ke **DNS Settings**
 - Matikan **Custom DNS Setting**
