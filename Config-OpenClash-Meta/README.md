@@ -3,7 +3,8 @@
 > https://t.me/hiddentokio
 > https://t.me/risuntrash
 
-# RisunTuru OpenClash Config Backup
+# Download OpenClash backup
+- Download [DISINI](https://github.com/risunCode/RISUN_Config_OWRT/releases/download/oktober-update-24/oct-Risun-OpenClash.tar.tar.gz)
 - OpenClash Redir-Host TunMix Mode
 - No DNS Leak
 - No Memory leak > 150MB
