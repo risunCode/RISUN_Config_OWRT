@@ -1,6 +1,7 @@
 > [!IMPORTANT]
 > Brought to you by: RisunTuru
-> https://t.me/hiddentokio
+> - https://t.me/hiddentokio
+> - https://t.me/risuntrash
 
 # Config Clash untuk Android
 - [Download Disini](https://github.com/risunCode/RISUN_Config_OWRT/releases/download/oktober-update-24/BFM-CFM-CLASH-ANDROID-Risun.zip)
