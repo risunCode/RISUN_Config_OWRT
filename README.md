@@ -1,3 +1,5 @@
+#  update 1 Maret 2025, gak update repo ini lagi, soalnya udah dijual alatnya.
+
 > [!IMPORTANT]
 > Brought to you by: RisunTuru
 > - https://t.me/hiddentokio
